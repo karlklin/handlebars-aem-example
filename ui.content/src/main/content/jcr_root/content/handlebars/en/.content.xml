@@ -137,4 +137,6 @@
             </responsivegrid>
         </root>
     </jcr:content>
+    <home/>
+    <product/>
 </jcr:root>
