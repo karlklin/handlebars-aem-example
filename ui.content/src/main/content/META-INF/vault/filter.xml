@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/handlebars" mode="merge"/>
-    <filter root="/content/handlebars" mode="merge"/>
-    <filter root="/content/dam/handlebars" mode="merge"/>
+    <filter root="/conf/handlebars"/>
+    <filter root="/content/handlebars"/>
+    <filter root="/content/dam/handlebars"/>
+    <filter root="/etc/designs/spapoc"/>
 </workspaceFilter>
