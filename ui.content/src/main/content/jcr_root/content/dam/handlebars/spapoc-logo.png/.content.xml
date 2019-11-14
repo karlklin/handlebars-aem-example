@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="29977dd5-64ea-46c0-b54d-11eb9ad3818b">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2019-11-14T10:36:34.392+01:00"
+        jcr:lastModifiedBy="dam-update-service"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:Comments="XML:com.adobe.xmp: &lt;?xpacket begin=&quot;﻿&quot; id=&quot;W5M0MpCehiHzreSzNTczkc9d&quot;?>&#xa;&lt;x:xmpmeta xmlns:x=&quot;adobe:ns:meta/&quot; x:xmptk=&quot;Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        &quot;>&#xa; &lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;>&#xa;  &lt;rdf:Description rdf:about=&quot;&quot;&#xa;    xmlns:ns1=&quot;http://www.day.com/dam/1.0&quot;&#xa;    xmlns:tiff=&quot;http://ns.adobe.com/tiff/1.0/&quot;&#xa;    xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;&#xa;   ns1:Physicalheightininches=&quot;0.19585031270980835&quot;&#xa;   ns1:Physicalwidthininches=&quot;0.6083860397338867&quot;&#xa;   ns1:Fileformat=&quot;PNG&quot;&#xa;   ns1:Progressive=&quot;no&quot;&#xa;   ns1:extracted=&quot;2019-10-25T17:31:31.382+02:00&quot;&#xa;   ns1:Bitsperpixel=&quot;24&quot;&#xa;   ns1:MIMEtype=&quot;image/png&quot;&#xa;   ns1:Physicalwidthindpi=&quot;240&quot;&#xa;   ns1:Physicalheightindpi=&quot;240&quot;&#xa;   ns1:Numberofimages=&quot;1&quot;&#xa;   ns1:Numberoftextualcomments=&quot;0&quot;&#xa;   ns1:sha1=&quot;02eacbab0deb70e4a983050198f361b0ac1aadfb&quot;&#xa;   ns1:size=&quot;5127&quot;&#xa;   tiff:ImageLength=&quot;47&quot;&#xa;   tiff:ImageWidth=&quot;146&quot;&#xa;   dc:format=&quot;image/png&quot;&#xa;   dc:modified=&quot;2019-10-25T17:32:25.246+02:00&quot;/>&#xa; &lt;/rdf:RDF>&#xa;&lt;/x:xmpmeta>&#xa;&lt;?xpacket end=&quot;r&quot;?>&#xa;"
+            dam:extracted="{Date}2019-11-14T10:36:34.330+01:00"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}1"
+            dam:Physicalheightindpi="{Long}240"
+            dam:Physicalheightininches="{Decimal}0.19585031270980835"
+            dam:Physicalwidthindpi="{Long}240"
+            dam:Physicalwidthininches="{Decimal}0.6083860397338867"
+            dam:Progressive="no"
+            dam:sha1="ea3fe0932a18190c499724376e01e11f75dfabd9"
+            dam:size="{Long}6182"
+            dc:format="image/png"
+            dc:modified="{Date}2019-10-25T17:32:25.246+02:00"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}47"
+            tiff:ImageWidth="{Long}146"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

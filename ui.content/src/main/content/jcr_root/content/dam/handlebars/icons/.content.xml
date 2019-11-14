@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <paypal.png/>
+    <icon-header-01.png/>
+    <icon-header-02.png/>
+    <discover.png/>
+    <mastercard.png/>
+    <visa.png/>
+    <icon-search.png/>
+    <express.png/>
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <folderThumbnail/>
+    </jcr:content>
+</jcr:root>
