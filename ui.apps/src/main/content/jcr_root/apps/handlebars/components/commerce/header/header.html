@@ -10,65 +10,41 @@
                 <nav class="menu">
                     <ul class="main_menu">
 
-                        <knotx:snippet data-knotx-task="mega-menu-task">
+                        <knotx:snippet data-knotx-task="static-mega-menu-task">
                             <li><a class="s-text13 active1"
                                    href="http://spapoc-int-publish.cognet.local/en/products/What's%20New_38">{{megaMenuTop}}</a>
                             </li>
                         </knotx:snippet>
 
-                        <li><a class="s-text13 active1"
-                               href="http://spapoc-int-publish.cognet.local/en/products/What's%20New_38">What's New</a>
-                        </li>
-                        <li><a class="s-text13 active1"
-                               href="http://spapoc-int-publish.cognet.local/en/products/Women_20">Women</a>
-                            <ul class="sub_menu">
-                                <li>
-                                    <a href="http://spapoc-int-publish.cognet.local/en/products/tops_21/Tops_21">Tops</a>
+                        <knotx:snippet data-knotx-task="mega-menu-task">
+                            <li><a class="s-text13 active1"
+                                   href="http://spapoc-int-publish.cognet.local/en/products/What's%20New_38">{{mega-menu-fetch._result.name}}</a>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="http://spapoc-int-publish.cognet.local/en/products/tops_21/Tops_21">Tops</a>
+                                    </li>
+                                    <li><a href="http://spapoc-int-publish.cognet.local/en/products/Bottoms_22">Bottoms</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </knotx:snippet>
+
+                        <knotx:snippet data-knotx-task="mega-menu-task">
+                            {{#each mega-menu-fetch._result.children_data}}
+                                <li><a class="s-text13 active1"
+                                       href="http://spapoc-int-publish.cognet.local/en/products/{{this.name}}">{{this.name}}</a>
+                                    {{#if this.children_data}}
+                                    <ul class="sub_menu">
+                                        {{#each this.children_data}}
+                                            <li>
+                                                <a href="http://spapoc-int-publish.cognet.local/en/products/{{this.name}}">{{this.name}}</a>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
                                 </li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Bottoms_22">Bottoms</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="s-text13 active1"
-                               href="http://spapoc-int-publish.cognet.local/en/products/Men_11">Men</a>
-                            <ul class="sub_menu">
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Tops_12">Tops</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Bottoms_13">Bottoms</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="s-text13 active1"
-                               href="http://spapoc-int-publish.cognet.local/en/products/Gear_3">Gear</a>
-                            <ul class="sub_menu">
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Bags_4">Bags</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Fitness%20Equipment_5">Fitness
-                                    Equipment</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Watches_6">Watches</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="s-text13 active1"
-                               href="http://spapoc-int-publish.cognet.local/en/products/training_9/Training_9">Training</a>
-                            <ul class="sub_menu">
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/products/Video%20Download_10">Video
-                                    Download</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="s-text13 active1"
-                               href="http://spapoc-int-publish.cognet.local/en/products/Sale_37">Sale</a></li>
-                        <li><a class="s-text13 active1" href="http://spapoc-int-publish.cognet.local/en/home">Others</a>
-                            <ul class="sub_menu">
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/events">Events</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/faq">FAQ</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/about-us">About Us</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/delivery">Delivery</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/bestsellers">Bestsellers</a>
-                                </li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/broken">Broken Page</a></li>
-                                <li><a href="http://spapoc-int-publish.cognet.local/en/home/restricted-page">Restricted
-                                    Page</a></li>
-                            </ul>
-                        </li>
+                            {{/each}}
+                        </knotx:snippet>
                     </ul>
                 </nav>
             </div>
