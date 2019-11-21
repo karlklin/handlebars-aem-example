@@ -1,62 +1,82 @@
-<header class="header1">
-    <div class="container-menu-header">
-        <div class="wrap_header">
-            <a class="logo"
-               aria-label="Page Logotype - Wellbeing Warehouse"
-               href="http://spapoc-int-publish.cognet.local/en/home">
-                    <img src="/content/dam/handlebars/spapoc-logo.png" alt="Homepage">
-            </a>
-            <div class="wrap_menu">
-                <nav class="menu">
-                    <ul class="main_menu">
-                        <knotx:snippet data-knotx-task="mega-menu-task">
-                            {{#each mega-menu-fetch._result.children_data}}
-                                <li><a class="s-text13 active1"
-                                       href="http://spapoc-int-publish.cognet.local/en/products/{{this.name}}">{{this.name}}</a>
-                                    {{#if this.children_data}}
-                                    <ul class="sub_menu">
-                                        {{#each this.children_data}}
-                                            <li>
-                                                <a href="http://spapoc-int-publish.cognet.local/en/products/{{this.name}}">{{this.name}}</a>
-                                            </li>
-                                        {{/each}}
-                                    </ul>
-                                    {{/if}}
-                                </li>
-                            {{/each}}
-                        </knotx:snippet>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-icons">
-                <div class="search-product-wrapper expandable">
-                    <div class="search-product pos-relative bo4 of-hidden ">
-                        <form><label class="visually-hidden" for="search-product">Search...</label><input
-                                class="s-text7 size6 p-l-50 p-r-50" type="text" name="search-product"
-                                id="search-product" placeholder="Search...">
-                            <button aria-label="Submit serch term" type="submit"
-                                    class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4"><i
-                                    class="fs-12 fa fa-search" aria-hidden="true"></i></button>
-                            <button class="search-product-close-button flex-c-m size5 ab-l-m color2 color0-hov trans-0-4"
-                                    aria-label="Close search field"><i class="fs-12 fa fa-close" aria-hidden="true"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <button aria-label="Open search field"><i
-                            class="search-icon header-wrapicon1 dis-block visible"><img
-                            src="/content/dam/handlebars/icons/icon-search.png" class="header-icon1" alt="ICON"></i>
-                    </button>
+<div class=" aem-GridColumn aem-GridColumn--default--12">
+    <div class="snippet-component snippet-no-padding">
+        <div>
+            <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                <div class=" aem-GridColumn aem-GridColumn--default--12">
+                    <header class="header1">
+                        <div class="container-menu-header">
+                            <div class="wrap_header">
+                                <a class="logo"
+                                   aria-label="Page Logotype - Wellbeing Warehouse"
+                                   href="http://spapoc-int-publish.cognet.local/en/home">
+                                    <img src="/content/dam/handlebars/spapoc-logo.png" alt="Homepage">
+                                </a>
+                                <div class="wrap_menu">
+                                    <nav class="menu">
+                                        <ul class="main_menu">
+                                            <knotx:snippet data-knotx-task="mega-menu-task">
+                                                {{#each mega-menu-fetch._result.children_data}}
+                                                <li><a class="s-text13 active1"
+                                                       href="http://spapoc-int-publish.cognet.local/en/products/{{this.name}}">{{this.name}}</a>
+                                                    {{#if this.children_data}}
+                                                    <ul class="sub_menu">
+                                                        {{#each this.children_data}}
+                                                        <li>
+                                                            <a href="http://spapoc-int-publish.cognet.local/en/products/{{this.name}}">{{this.name}}</a>
+                                                        </li>
+                                                        {{/each}}
+                                                    </ul>
+                                                    {{/if}}
+                                                </li>
+                                                {{/each}}
+                                            </knotx:snippet>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-icons">
+                                    <div class="search-product-wrapper expandable">
+                                        <div class="search-product pos-relative bo4 of-hidden ">
+                                            <form><label class="visually-hidden"
+                                                         for="search-product">Search...</label><input
+                                                    class="s-text7 size6 p-l-50 p-r-50" type="text"
+                                                    name="search-product"
+                                                    id="search-product" placeholder="Search...">
+                                                <button aria-label="Submit serch term" type="submit"
+                                                        class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4"><i
+                                                        class="fs-12 fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="search-product-close-button flex-c-m size5 ab-l-m color2 color0-hov trans-0-4"
+                                                        aria-label="Close search field"><i class="fs-12 fa fa-close"
+                                                                                           aria-hidden="true"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <button aria-label="Open search field"><i
+                                                class="search-icon header-wrapicon1 dis-block visible"><img
+                                                src="/content/dam/handlebars/icons/icon-search.png" class="header-icon1"
+                                                alt="ICON"></i>
+                                        </button>
+                                    </div>
+                                    <span class="linedivide2"></span><i class="header-wrapicon1 dis-block"><a
+                                        aria-label="Your Profile"
+                                        href="http://spapoc-int-publish.cognet.local/en/home/myProfile"><img
+                                        src="/content/dam/handlebars/icons/icon-header-01.png" class="header-icon1"
+                                        alt="ICON"></a></i><span
+                                        class="linedivide2"></span>
+                                    <div class="header-wrapicon2">
+                                        <button aria-label="View you cart"><img
+                                                src="/content/dam/handlebars/icons/icon-header-02.png"
+                                                class="header-icon1 js-show-header-dropdown" alt="ICON">
+                                        </button>
+                                        <span class="header-icons-noti">0</span></div>
+                                </div>
+                            </div>
+                            <span tabindex="-1" id="endOfNav" aria-label="End of navigation"></span></div>
+                    </header>
+                    <div></div>
                 </div>
-                <span class="linedivide2"></span><i class="header-wrapicon1 dis-block"><a aria-label="Your Profile"
-                                                                                          href="http://spapoc-int-publish.cognet.local/en/home/myProfile"><img
-                    src="/content/dam/handlebars/icons/icon-header-01.png" class="header-icon1" alt="ICON"></a></i><span
-                    class="linedivide2"></span>
-                <div class="header-wrapicon2">
-                    <button aria-label="View you cart"><img src="/content/dam/handlebars/icons/icon-header-02.png"
-                                                            class="header-icon1 js-show-header-dropdown" alt="ICON">
-                    </button>
-                    <span class="header-icons-noti">0</span></div>
             </div>
+            <div></div>
         </div>
-        <span tabindex="-1" id="endOfNav" aria-label="End of navigation"></span></div>
-</header>
+    </div>
+    <div></div>
+</div>
